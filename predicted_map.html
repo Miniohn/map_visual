@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b9704c86b264759f28c490fd932deb42 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b9704c86b264759f28c490fd932deb42" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b9704c86b264759f28c490fd932deb42 = L.map(
+                "map_b9704c86b264759f28c490fd932deb42",
+                {
+                    center: [36.82858334915254, 128.62127958135594],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fd04b32b356b07455ce9b2170ac63d79 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b9704c86b264759f28c490fd932deb42);
+        
+    
+            var marker_cluster_be5fb2ecc44421e42df333768fcb6c39 = L.markerClusterGroup(
+                {}
+            );
+            map_b9704c86b264759f28c490fd932deb42.addLayer(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+            var circle_marker_6ce7a730432504c7bf7bbdb80e4e404a = L.circleMarker(
+                [36.8286771, 128.6173046],
+                {"bubblingMouseEvents": true, "color": "#fed36f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed36f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_73d554e39526318ff71963264f1a08fd = L.popup({"maxWidth": 300});
+
+        
+            var html_9bb084b87c573e6a8bc732c3d733c1be = $(`<div id="html_9bb084b87c573e6a8bc732c3d733c1be" style="width: 100.0%; height: 100.0%;">면적(wide): 42㎡<br>건축년도(year): 2023<br>병원 거리: 530m<br>학교 거리: 221m<br>회사 거리: 2752m<br>예측 거래금액: 53만원</div>`)[0];
+            popup_73d554e39526318ff71963264f1a08fd.setContent(html_9bb084b87c573e6a8bc732c3d733c1be);
+        
+
+        circle_marker_6ce7a730432504c7bf7bbdb80e4e404a.bindPopup(popup_73d554e39526318ff71963264f1a08fd)
+        ;
+
+        
+    
+    
+            var circle_marker_8ff0ffe8330d3db52ce3328f104fd4ff = L.circleMarker(
+                [36.8274029, 128.6253744],
+                {"bubblingMouseEvents": true, "color": "#fd8c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd8c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_4ee7ff1743943ca7a6f46067609ca0c8 = L.popup({"maxWidth": 300});
+
+        
+            var html_456157b860c7f4142695dc4ac3f4fa6f = $(`<div id="html_456157b860c7f4142695dc4ac3f4fa6f" style="width: 100.0%; height: 100.0%;">면적(wide): 53㎡<br>건축년도(year): 2024<br>병원 거리: 766m<br>학교 거리: 348m<br>회사 거리: 2140m<br>예측 거래금액: 69만원</div>`)[0];
+            popup_4ee7ff1743943ca7a6f46067609ca0c8.setContent(html_456157b860c7f4142695dc4ac3f4fa6f);
+        
+
+        circle_marker_8ff0ffe8330d3db52ce3328f104fd4ff.bindPopup(popup_4ee7ff1743943ca7a6f46067609ca0c8)
+        ;
+
+        
+    
+    
+            var circle_marker_f52f8128befbd2f64032948ae0c3195b = L.circleMarker(
+                [36.8264601, 128.6215724],
+                {"bubblingMouseEvents": true, "color": "#fed36f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed36f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_f7adfce062acde116eaac881662b9dfd = L.popup({"maxWidth": 300});
+
+        
+            var html_bcdb6f9fbb385e8077ef9720bc796689 = $(`<div id="html_bcdb6f9fbb385e8077ef9720bc796689" style="width: 100.0%; height: 100.0%;">면적(wide): 37㎡<br>건축년도(year): 2023<br>병원 거리: 977m<br>학교 거리: 54m<br>회사 거리: 1993m<br>예측 거래금액: 53만원</div>`)[0];
+            popup_f7adfce062acde116eaac881662b9dfd.setContent(html_bcdb6f9fbb385e8077ef9720bc796689);
+        
+
+        circle_marker_f52f8128befbd2f64032948ae0c3195b.bindPopup(popup_f7adfce062acde116eaac881662b9dfd)
+        ;
+
+        
+    
+    
+            var circle_marker_951af20c6a99f183a82673bf54878821 = L.circleMarker(
+                [36.8289456, 128.617994],
+                {"bubblingMouseEvents": true, "color": "#ffefa4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffefa4", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_6976cc816da9bb3a54d333ecc5f685e5 = L.popup({"maxWidth": 300});
+
+        
+            var html_3d31448caf810705b79fd2ce1c7e7919 = $(`<div id="html_3d31448caf810705b79fd2ce1c7e7919" style="width: 100.0%; height: 100.0%;">면적(wide): 13㎡<br>건축년도(year): 2022<br>병원 거리: 665m<br>학교 거리: 354m<br>회사 거리: 2313m<br>예측 거래금액: 42만원</div>`)[0];
+            popup_6976cc816da9bb3a54d333ecc5f685e5.setContent(html_3d31448caf810705b79fd2ce1c7e7919);
+        
+
+        circle_marker_951af20c6a99f183a82673bf54878821.bindPopup(popup_6976cc816da9bb3a54d333ecc5f685e5)
+        ;
+
+        
+    
+    
+            var circle_marker_66d30689f9807c1c42e3e680d2ab74d1 = L.circleMarker(
+                [36.828425, 128.6173055],
+                {"bubblingMouseEvents": true, "color": "#ffeda0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeda0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_3cd62a67d46521e402e0d18b01b2c726 = L.popup({"maxWidth": 300});
+
+        
+            var html_38c62da206f60069965295c34c9c4c18 = $(`<div id="html_38c62da206f60069965295c34c9c4c18" style="width: 100.0%; height: 100.0%;">면적(wide): 20㎡<br>건축년도(year): 2022<br>병원 거리: 994m<br>학교 거리: 124m<br>회사 거리: 2000m<br>예측 거래금액: 43만원</div>`)[0];
+            popup_3cd62a67d46521e402e0d18b01b2c726.setContent(html_38c62da206f60069965295c34c9c4c18);
+        
+
+        circle_marker_66d30689f9807c1c42e3e680d2ab74d1.bindPopup(popup_3cd62a67d46521e402e0d18b01b2c726)
+        ;
+
+        
+    
+    
+            var circle_marker_8d91b99eea32c9cf1a0879685d851d4c = L.circleMarker(
+                [36.8289581, 128.6169538],
+                {"bubblingMouseEvents": true, "color": "#fffbc2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffbc2", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_81c85a397366013b6fe3ddde4b2fb615 = L.popup({"maxWidth": 300});
+
+        
+            var html_08b86443189f187a31536e0eeeeefd3b = $(`<div id="html_08b86443189f187a31536e0eeeeefd3b" style="width: 100.0%; height: 100.0%;">면적(wide): 16㎡<br>건축년도(year): 2022<br>병원 거리: 447m<br>학교 거리: 102m<br>회사 거리: 2916m<br>예측 거래금액: 36만원</div>`)[0];
+            popup_81c85a397366013b6fe3ddde4b2fb615.setContent(html_08b86443189f187a31536e0eeeeefd3b);
+        
+
+        circle_marker_8d91b99eea32c9cf1a0879685d851d4c.bindPopup(popup_81c85a397366013b6fe3ddde4b2fb615)
+        ;
+
+        
+    
+    
+            var circle_marker_1f4fe3ab4919212bf345890316b47f62 = L.circleMarker(
+                [36.8277612, 128.6180664],
+                {"bubblingMouseEvents": true, "color": "#fea647", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fea647", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_91c78cb8167ba6d98f41d3199b70b02f = L.popup({"maxWidth": 300});
+
+        
+            var html_2702d5234e40e4650aa10efee4000876 = $(`<div id="html_2702d5234e40e4650aa10efee4000876" style="width: 100.0%; height: 100.0%;">면적(wide): 48㎡<br>건축년도(year): 2022<br>병원 거리: 996m<br>학교 거리: 115m<br>회사 거리: 2414m<br>예측 거래금액: 63만원</div>`)[0];
+            popup_91c78cb8167ba6d98f41d3199b70b02f.setContent(html_2702d5234e40e4650aa10efee4000876);
+        
+
+        circle_marker_1f4fe3ab4919212bf345890316b47f62.bindPopup(popup_91c78cb8167ba6d98f41d3199b70b02f)
+        ;
+
+        
+    
+    
+            var circle_marker_4f17f5ee0446dab9656dae7d7ee4342c = L.circleMarker(
+                [36.8293773, 128.6174039],
+                {"bubblingMouseEvents": true, "color": "#feda78", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feda78", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_3518daeefde4efcf55e984c256cf489a = L.popup({"maxWidth": 300});
+
+        
+            var html_afb22307b52a63cdba776c59dfc1f5d9 = $(`<div id="html_afb22307b52a63cdba776c59dfc1f5d9" style="width: 100.0%; height: 100.0%;">면적(wide): 39㎡<br>건축년도(year): 2024<br>병원 거리: 1093m<br>학교 거리: 109m<br>회사 거리: 2660m<br>예측 거래금액: 51만원</div>`)[0];
+            popup_3518daeefde4efcf55e984c256cf489a.setContent(html_afb22307b52a63cdba776c59dfc1f5d9);
+        
+
+        circle_marker_4f17f5ee0446dab9656dae7d7ee4342c.bindPopup(popup_3518daeefde4efcf55e984c256cf489a)
+        ;
+
+        
+    
+    
+            var circle_marker_77eee7c798514bc9186949c27e373183 = L.circleMarker(
+                [36.8291881, 128.6204357],
+                {"bubblingMouseEvents": true, "color": "#fff3af", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff3af", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_40403fc4b81ee29f10edca4d95685593 = L.popup({"maxWidth": 300});
+
+        
+            var html_96a7d7dfacb566368f226d4de161a947 = $(`<div id="html_96a7d7dfacb566368f226d4de161a947" style="width: 100.0%; height: 100.0%;">면적(wide): 17㎡<br>건축년도(year): 2022<br>병원 거리: 954m<br>학교 거리: 87m<br>회사 거리: 2063m<br>예측 거래금액: 40만원</div>`)[0];
+            popup_40403fc4b81ee29f10edca4d95685593.setContent(html_96a7d7dfacb566368f226d4de161a947);
+        
+
+        circle_marker_77eee7c798514bc9186949c27e373183.bindPopup(popup_40403fc4b81ee29f10edca4d95685593)
+        ;
+
+        
+    
+    
+            var circle_marker_792050bcc6a7d2eb22ad3fd362f57413 = L.circleMarker(
+                [36.8290211, 128.6199071],
+                {"bubblingMouseEvents": true, "color": "#fd7e38", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e38", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_b695affd08e3497e476a89d8af36d880 = L.popup({"maxWidth": 300});
+
+        
+            var html_118fbb0c39a1829fad0cd2653b757c3d = $(`<div id="html_118fbb0c39a1829fad0cd2653b757c3d" style="width: 100.0%; height: 100.0%;">면적(wide): 69㎡<br>건축년도(year): 2023<br>병원 거리: 738m<br>학교 거리: 147m<br>회사 거리: 2546m<br>예측 거래금액: 71만원</div>`)[0];
+            popup_b695affd08e3497e476a89d8af36d880.setContent(html_118fbb0c39a1829fad0cd2653b757c3d);
+        
+
+        circle_marker_792050bcc6a7d2eb22ad3fd362f57413.bindPopup(popup_b695affd08e3497e476a89d8af36d880)
+        ;
+
+        
+    
+    
+            var circle_marker_aa6192124b9950c1d0f0ae6799eb8a24 = L.circleMarker(
+                [36.8290633, 128.6207466],
+                {"bubblingMouseEvents": true, "color": "#fff5b3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff5b3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_8f0e7fe6566663d73284208da775ce63 = L.popup({"maxWidth": 300});
+
+        
+            var html_6eeb56a8bab3d5a3f11f43b31964ae10 = $(`<div id="html_6eeb56a8bab3d5a3f11f43b31964ae10" style="width: 100.0%; height: 100.0%;">면적(wide): 26㎡<br>건축년도(year): 2022<br>병원 거리: 434m<br>학교 거리: 289m<br>회사 거리: 2711m<br>예측 거래금액: 39만원</div>`)[0];
+            popup_8f0e7fe6566663d73284208da775ce63.setContent(html_6eeb56a8bab3d5a3f11f43b31964ae10);
+        
+
+        circle_marker_aa6192124b9950c1d0f0ae6799eb8a24.bindPopup(popup_8f0e7fe6566663d73284208da775ce63)
+        ;
+
+        
+    
+    
+            var circle_marker_7879068885ed09903789d51cdada24ec = L.circleMarker(
+                [36.828232, 128.6177183],
+                {"bubblingMouseEvents": true, "color": "#fff1a9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff1a9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_dc5a2f92b95b04db3f2b809dee07204b = L.popup({"maxWidth": 300});
+
+        
+            var html_b9c5c5ec1a326a4adff53f42fc7ca9f8 = $(`<div id="html_b9c5c5ec1a326a4adff53f42fc7ca9f8" style="width: 100.0%; height: 100.0%;">면적(wide): 28㎡<br>건축년도(year): 2024<br>병원 거리: 183m<br>학교 거리: 656m<br>회사 거리: 2786m<br>예측 거래금액: 41만원</div>`)[0];
+            popup_dc5a2f92b95b04db3f2b809dee07204b.setContent(html_b9c5c5ec1a326a4adff53f42fc7ca9f8);
+        
+
+        circle_marker_7879068885ed09903789d51cdada24ec.bindPopup(popup_dc5a2f92b95b04db3f2b809dee07204b)
+        ;
+
+        
+    
+    
+            var circle_marker_7b3aa0b691369cce98b0316f45efdf31 = L.circleMarker(
+                [36.8293508, 128.6268039],
+                {"bubblingMouseEvents": true, "color": "#fedf83", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedf83", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_e0d789722be94cf997edd35cb12d800f = L.popup({"maxWidth": 300});
+
+        
+            var html_307a68ffb9774b956d161556ed87432a = $(`<div id="html_307a68ffb9774b956d161556ed87432a" style="width: 100.0%; height: 100.0%;">면적(wide): 31㎡<br>건축년도(year): 2022<br>병원 거리: 895m<br>학교 거리: 19m<br>회사 거리: 2441m<br>예측 거래금액: 49만원</div>`)[0];
+            popup_e0d789722be94cf997edd35cb12d800f.setContent(html_307a68ffb9774b956d161556ed87432a);
+        
+
+        circle_marker_7b3aa0b691369cce98b0316f45efdf31.bindPopup(popup_e0d789722be94cf997edd35cb12d800f)
+        ;
+
+        
+    
+    
+            var circle_marker_41ba1b5ad6b42bd001d8af517c4996b1 = L.circleMarker(
+                [36.8293962, 128.6266508],
+                {"bubblingMouseEvents": true, "color": "#fff5b3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff5b3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_92be158cdb131063e4dca4453d8072b3 = L.popup({"maxWidth": 300});
+
+        
+            var html_ea65cb8405babea5e86966566f9a7a6a = $(`<div id="html_ea65cb8405babea5e86966566f9a7a6a" style="width: 100.0%; height: 100.0%;">면적(wide): 22㎡<br>건축년도(year): 2023<br>병원 거리: 869m<br>학교 거리: 275m<br>회사 거리: 2041m<br>예측 거래금액: 39만원</div>`)[0];
+            popup_92be158cdb131063e4dca4453d8072b3.setContent(html_ea65cb8405babea5e86966566f9a7a6a);
+        
+
+        circle_marker_41ba1b5ad6b42bd001d8af517c4996b1.bindPopup(popup_92be158cdb131063e4dca4453d8072b3)
+        ;
+
+        
+    
+    
+            var circle_marker_5b76ebedecf593f14bc097082d8f4df0 = L.circleMarker(
+                [36.8297586, 128.626421],
+                {"bubblingMouseEvents": true, "color": "#fff5b3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff5b3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_62042a182b7a33141e60b1f25bf6da9a = L.popup({"maxWidth": 300});
+
+        
+            var html_f8e6ecd649d0ef5015f888d3f3df9b80 = $(`<div id="html_f8e6ecd649d0ef5015f888d3f3df9b80" style="width: 100.0%; height: 100.0%;">면적(wide): 26㎡<br>건축년도(year): 2024<br>병원 거리: 498m<br>학교 거리: 841m<br>회사 거리: 2414m<br>예측 거래금액: 39만원</div>`)[0];
+            popup_62042a182b7a33141e60b1f25bf6da9a.setContent(html_f8e6ecd649d0ef5015f888d3f3df9b80);
+        
+
+        circle_marker_5b76ebedecf593f14bc097082d8f4df0.bindPopup(popup_62042a182b7a33141e60b1f25bf6da9a)
+        ;
+
+        
+    
+    
+            var circle_marker_34bda30f66d7066a25ff3ca42f5c02cf = L.circleMarker(
+                [36.8296602, 128.6262942],
+                {"bubblingMouseEvents": true, "color": "#fff9be", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff9be", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_26c315f24cf6a145ca69e0ff7b3e0083 = L.popup({"maxWidth": 300});
+
+        
+            var html_b1d2640cb825bc830d25d707694cb1a5 = $(`<div id="html_b1d2640cb825bc830d25d707694cb1a5" style="width: 100.0%; height: 100.0%;">면적(wide): 15㎡<br>건축년도(year): 2023<br>병원 거리: 1003m<br>학교 거리: 230m<br>회사 거리: 2743m<br>예측 거래금액: 37만원</div>`)[0];
+            popup_26c315f24cf6a145ca69e0ff7b3e0083.setContent(html_b1d2640cb825bc830d25d707694cb1a5);
+        
+
+        circle_marker_34bda30f66d7066a25ff3ca42f5c02cf.bindPopup(popup_26c315f24cf6a145ca69e0ff7b3e0083)
+        ;
+
+        
+    
+    
+            var circle_marker_e891f2011afdb680b7d10e52e5fc3d9e = L.circleMarker(
+                [36.8289107, 128.6227947],
+                {"bubblingMouseEvents": true, "color": "#fff9be", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff9be", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_883e5db43911bb04bcabb726dffc1a40 = L.popup({"maxWidth": 300});
+
+        
+            var html_d3c7d263b7b92861d6aba77a42981f17 = $(`<div id="html_d3c7d263b7b92861d6aba77a42981f17" style="width: 100.0%; height: 100.0%;">면적(wide): 22㎡<br>건축년도(year): 2024<br>병원 거리: 939m<br>학교 거리: 162m<br>회사 거리: 1991m<br>예측 거래금액: 37만원</div>`)[0];
+            popup_883e5db43911bb04bcabb726dffc1a40.setContent(html_d3c7d263b7b92861d6aba77a42981f17);
+        
+
+        circle_marker_e891f2011afdb680b7d10e52e5fc3d9e.bindPopup(popup_883e5db43911bb04bcabb726dffc1a40)
+        ;
+
+        
+    
+    
+            var circle_marker_9103103904c1b5e874476241c386aff5 = L.circleMarker(
+                [36.8300771, 128.6187124],
+                {"bubblingMouseEvents": true, "color": "#fec05b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fec05b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_22bf2bf4c4e91b1d79a4c7ec3bbb3fc1 = L.popup({"maxWidth": 300});
+
+        
+            var html_5821f3291dac07e7ecf4a03745182e52 = $(`<div id="html_5821f3291dac07e7ecf4a03745182e52" style="width: 100.0%; height: 100.0%;">면적(wide): 44㎡<br>건축년도(year): 2023<br>병원 거리: 788m<br>학교 거리: 381m<br>회사 거리: 2225m<br>예측 거래금액: 57만원</div>`)[0];
+            popup_22bf2bf4c4e91b1d79a4c7ec3bbb3fc1.setContent(html_5821f3291dac07e7ecf4a03745182e52);
+        
+
+        circle_marker_9103103904c1b5e874476241c386aff5.bindPopup(popup_22bf2bf4c4e91b1d79a4c7ec3bbb3fc1)
+        ;
+
+        
+    
+    
+            var circle_marker_aadf998b0b313813dd29d68f7b40153a = L.circleMarker(
+                [36.8287326, 128.6192155],
+                {"bubblingMouseEvents": true, "color": "#fece6a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fece6a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_def477ce720784155be678d78ecb2497 = L.popup({"maxWidth": 300});
+
+        
+            var html_ca58ad057175c45a4064d34dc50a01d3 = $(`<div id="html_ca58ad057175c45a4064d34dc50a01d3" style="width: 100.0%; height: 100.0%;">면적(wide): 36㎡<br>건축년도(year): 2024<br>병원 거리: 615m<br>학교 거리: 587m<br>회사 거리: 2307m<br>예측 거래금액: 54만원</div>`)[0];
+            popup_def477ce720784155be678d78ecb2497.setContent(html_ca58ad057175c45a4064d34dc50a01d3);
+        
+
+        circle_marker_aadf998b0b313813dd29d68f7b40153a.bindPopup(popup_def477ce720784155be678d78ecb2497)
+        ;
+
+        
+    
+    
+            var circle_marker_8c9f5c1859bf7053942c8e1ba4194030 = L.circleMarker(
+                [36.8300547, 128.6188621],
+                {"bubblingMouseEvents": true, "color": "#fd9e43", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd9e43", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_54fbf89206483aa19772f832c998860b = L.popup({"maxWidth": 300});
+
+        
+            var html_f05c91cca1d5acd3187c85a7fb88f869 = $(`<div id="html_f05c91cca1d5acd3187c85a7fb88f869" style="width: 100.0%; height: 100.0%;">면적(wide): 49㎡<br>건축년도(year): 2024<br>병원 거리: 478m<br>학교 거리: 90m<br>회사 거리: 2899m<br>예측 거래금액: 65만원</div>`)[0];
+            popup_54fbf89206483aa19772f832c998860b.setContent(html_f05c91cca1d5acd3187c85a7fb88f869);
+        
+
+        circle_marker_8c9f5c1859bf7053942c8e1ba4194030.bindPopup(popup_54fbf89206483aa19772f832c998860b)
+        ;
+
+        
+    
+    
+            var circle_marker_75c468cc3b6a2100ad186da72c4c466b = L.circleMarker(
+                [36.8307256, 128.6185969],
+                {"bubblingMouseEvents": true, "color": "#feaf4b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feaf4b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_6eb0118c47f31d5df8c927e9e4f20450 = L.popup({"maxWidth": 300});
+
+        
+            var html_eabd668de2c966c93d67e683cb0bb003 = $(`<div id="html_eabd668de2c966c93d67e683cb0bb003" style="width: 100.0%; height: 100.0%;">면적(wide): 47㎡<br>건축년도(year): 2024<br>병원 거리: 54m<br>학교 거리: 714m<br>회사 거리: 2667m<br>예측 거래금액: 61만원</div>`)[0];
+            popup_6eb0118c47f31d5df8c927e9e4f20450.setContent(html_eabd668de2c966c93d67e683cb0bb003);
+        
+
+        circle_marker_75c468cc3b6a2100ad186da72c4c466b.bindPopup(popup_6eb0118c47f31d5df8c927e9e4f20450)
+        ;
+
+        
+    
+    
+            var circle_marker_cd718601bab23d0e4b33588a603f1307 = L.circleMarker(
+                [36.8296779, 128.6216886],
+                {"bubblingMouseEvents": true, "color": "#fff1a9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff1a9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_bf008a700150487c688c51c9478e72cf = L.popup({"maxWidth": 300});
+
+        
+            var html_de0bb9b95c4a1c1f5952bad2c5d7d1e0 = $(`<div id="html_de0bb9b95c4a1c1f5952bad2c5d7d1e0" style="width: 100.0%; height: 100.0%;">면적(wide): 25㎡<br>건축년도(year): 2022<br>병원 거리: 554m<br>학교 거리: 795m<br>회사 거리: 2450m<br>예측 거래금액: 41만원</div>`)[0];
+            popup_bf008a700150487c688c51c9478e72cf.setContent(html_de0bb9b95c4a1c1f5952bad2c5d7d1e0);
+        
+
+        circle_marker_cd718601bab23d0e4b33588a603f1307.bindPopup(popup_bf008a700150487c688c51c9478e72cf)
+        ;
+
+        
+    
+    
+            var circle_marker_611ea12afa00c7a08950f07442de6019 = L.circleMarker(
+                [36.831476, 128.6230834],
+                {"bubblingMouseEvents": true, "color": "#feca66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feca66", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_6625b40f18ba455a12470bacf44a8f84 = L.popup({"maxWidth": 300});
+
+        
+            var html_60ce0ef9b213e09a34fe6d2f20da265d = $(`<div id="html_60ce0ef9b213e09a34fe6d2f20da265d" style="width: 100.0%; height: 100.0%;">면적(wide): 40㎡<br>건축년도(year): 2024<br>병원 거리: 815m<br>학교 거리: 87m<br>회사 거리: 2433m<br>예측 거래금액: 55만원</div>`)[0];
+            popup_6625b40f18ba455a12470bacf44a8f84.setContent(html_60ce0ef9b213e09a34fe6d2f20da265d);
+        
+
+        circle_marker_611ea12afa00c7a08950f07442de6019.bindPopup(popup_6625b40f18ba455a12470bacf44a8f84)
+        ;
+
+        
+    
+    
+            var circle_marker_a3cb6fa9876a77417e103fd77619d066 = L.circleMarker(
+                [36.8309586, 128.6218027],
+                {"bubblingMouseEvents": true, "color": "#fff9be", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff9be", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_c82ac2462a62bc0d5981564fa895e39b = L.popup({"maxWidth": 300});
+
+        
+            var html_81205ec34990037aa2617cb594ac1395 = $(`<div id="html_81205ec34990037aa2617cb594ac1395" style="width: 100.0%; height: 100.0%;">면적(wide): 23㎡<br>건축년도(year): 2024<br>병원 거리: 972m<br>학교 거리: 257m<br>회사 거리: 2747m<br>예측 거래금액: 37만원</div>`)[0];
+            popup_c82ac2462a62bc0d5981564fa895e39b.setContent(html_81205ec34990037aa2617cb594ac1395);
+        
+
+        circle_marker_a3cb6fa9876a77417e103fd77619d066.bindPopup(popup_c82ac2462a62bc0d5981564fa895e39b)
+        ;
+
+        
+    
+    
+            var circle_marker_cfcd72bdd536e9071996acb9a8e6fc93 = L.circleMarker(
+                [36.831818, 128.6233408],
+                {"bubblingMouseEvents": true, "color": "#ffeda0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeda0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_989a6fb1ed123915ab7642f9b79e6393 = L.popup({"maxWidth": 300});
+
+        
+            var html_6df712d2b985541e469d1db387a66df9 = $(`<div id="html_6df712d2b985541e469d1db387a66df9" style="width: 100.0%; height: 100.0%;">면적(wide): 13㎡<br>건축년도(year): 2022<br>병원 거리: 938m<br>학교 거리: 233m<br>회사 거리: 1975m<br>예측 거래금액: 43만원</div>`)[0];
+            popup_989a6fb1ed123915ab7642f9b79e6393.setContent(html_6df712d2b985541e469d1db387a66df9);
+        
+
+        circle_marker_cfcd72bdd536e9071996acb9a8e6fc93.bindPopup(popup_989a6fb1ed123915ab7642f9b79e6393)
+        ;
+
+        
+    
+    
+            var circle_marker_42452a1119e11be0ebc83287e7c1ccf1 = L.circleMarker(
+                [36.829502, 128.6221973],
+                {"bubblingMouseEvents": true, "color": "#ffeda0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeda0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_93fb0c2792d44181fe4a444c1fdd86a4 = L.popup({"maxWidth": 300});
+
+        
+            var html_6d7b92490ade10a4c14359f6ae050a8e = $(`<div id="html_6d7b92490ade10a4c14359f6ae050a8e" style="width: 100.0%; height: 100.0%;">면적(wide): 14㎡<br>건축년도(year): 2022<br>병원 거리: 986m<br>학교 거리: 212m<br>회사 거리: 2268m<br>예측 거래금액: 43만원</div>`)[0];
+            popup_93fb0c2792d44181fe4a444c1fdd86a4.setContent(html_6d7b92490ade10a4c14359f6ae050a8e);
+        
+
+        circle_marker_42452a1119e11be0ebc83287e7c1ccf1.bindPopup(popup_93fb0c2792d44181fe4a444c1fdd86a4)
+        ;
+
+        
+    
+    
+            var circle_marker_fd42a897917fc2f4f64051ffaf18b82c = L.circleMarker(
+                [36.8300957, 128.6226273],
+                {"bubblingMouseEvents": true, "color": "#ffea9b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffea9b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_9fd8108831021079afad1327afbac9b2 = L.popup({"maxWidth": 300});
+
+        
+            var html_77761d12e62ec4e50fde7654fdbceb55 = $(`<div id="html_77761d12e62ec4e50fde7654fdbceb55" style="width: 100.0%; height: 100.0%;">면적(wide): 29㎡<br>건축년도(year): 2022<br>병원 거리: 439m<br>학교 거리: 776m<br>회사 거리: 2553m<br>예측 거래금액: 44만원</div>`)[0];
+            popup_9fd8108831021079afad1327afbac9b2.setContent(html_77761d12e62ec4e50fde7654fdbceb55);
+        
+
+        circle_marker_fd42a897917fc2f4f64051ffaf18b82c.bindPopup(popup_9fd8108831021079afad1327afbac9b2)
+        ;
+
+        
+    
+    
+            var circle_marker_84c6f12db4f5e53bee18b7495d86d6f0 = L.circleMarker(
+                [36.8325118, 128.6227698],
+                {"bubblingMouseEvents": true, "color": "#fff3af", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff3af", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_42efa4915f15eaf1c004965a9c98b7d3 = L.popup({"maxWidth": 300});
+
+        
+            var html_bfec7c871a2cc10aaf7b34cb4cc3efe1 = $(`<div id="html_bfec7c871a2cc10aaf7b34cb4cc3efe1" style="width: 100.0%; height: 100.0%;">면적(wide): 18㎡<br>건축년도(year): 2022<br>병원 거리: 800m<br>학교 거리: 96m<br>회사 거리: 2445m<br>예측 거래금액: 40만원</div>`)[0];
+            popup_42efa4915f15eaf1c004965a9c98b7d3.setContent(html_bfec7c871a2cc10aaf7b34cb4cc3efe1);
+        
+
+        circle_marker_84c6f12db4f5e53bee18b7495d86d6f0.bindPopup(popup_42efa4915f15eaf1c004965a9c98b7d3)
+        ;
+
+        
+    
+    
+            var circle_marker_04e6a0231aa2d42b87ca77252402e0e3 = L.circleMarker(
+                [36.8264237, 128.6253764],
+                {"bubblingMouseEvents": true, "color": "#fff5b3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff5b3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_de2893c2b0279e8c723dd76c3bf442cc = L.popup({"maxWidth": 300});
+
+        
+            var html_492a8ea3241f26373862dc982bbf22dc = $(`<div id="html_492a8ea3241f26373862dc982bbf22dc" style="width: 100.0%; height: 100.0%;">면적(wide): 18㎡<br>건축년도(year): 2022<br>병원 거리: 1009m<br>학교 거리: 144m<br>회사 거리: 2480m<br>예측 거래금액: 39만원</div>`)[0];
+            popup_de2893c2b0279e8c723dd76c3bf442cc.setContent(html_492a8ea3241f26373862dc982bbf22dc);
+        
+
+        circle_marker_04e6a0231aa2d42b87ca77252402e0e3.bindPopup(popup_de2893c2b0279e8c723dd76c3bf442cc)
+        ;
+
+        
+    
+    
+            var circle_marker_ef330856b07a79acabf278f8264319ec = L.circleMarker(
+                [36.8308052, 128.620133],
+                {"bubblingMouseEvents": true, "color": "#fff9be", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff9be", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_1ec7579346e18bd1833a6733b3d82d04 = L.popup({"maxWidth": 300});
+
+        
+            var html_36f40fdeb7ff23a9490397756e936579 = $(`<div id="html_36f40fdeb7ff23a9490397756e936579" style="width: 100.0%; height: 100.0%;">면적(wide): 19㎡<br>건축년도(year): 2023<br>병원 거리: 482m<br>학교 거리: 662m<br>회사 거리: 2437m<br>예측 거래금액: 37만원</div>`)[0];
+            popup_1ec7579346e18bd1833a6733b3d82d04.setContent(html_36f40fdeb7ff23a9490397756e936579);
+        
+
+        circle_marker_ef330856b07a79acabf278f8264319ec.bindPopup(popup_1ec7579346e18bd1833a6733b3d82d04)
+        ;
+
+        
+    
+    
+            var circle_marker_e6f0f74d56ae9de714718d5f0810de69 = L.circleMarker(
+                [36.8309309, 128.6200677],
+                {"bubblingMouseEvents": true, "color": "#ffe895", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe895", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_b38c67f3c208a3f0331a5c891afa0a6e = L.popup({"maxWidth": 300});
+
+        
+            var html_510e2e14c98141ac9103829aa359fedd = $(`<div id="html_510e2e14c98141ac9103829aa359fedd" style="width: 100.0%; height: 100.0%;">면적(wide): 33㎡<br>건축년도(year): 2023<br>병원 거리: 524m<br>학교 거리: 150m<br>회사 거리: 2822m<br>예측 거래금액: 45만원</div>`)[0];
+            popup_b38c67f3c208a3f0331a5c891afa0a6e.setContent(html_510e2e14c98141ac9103829aa359fedd);
+        
+
+        circle_marker_e6f0f74d56ae9de714718d5f0810de69.bindPopup(popup_b38c67f3c208a3f0331a5c891afa0a6e)
+        ;
+
+        
+    
+    
+            var circle_marker_61819faf43e9e17c29d974cfbc937d5d = L.circleMarker(
+                [36.8291094, 128.6212402],
+                {"bubblingMouseEvents": true, "color": "#f03523", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f03523", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_df6e4822ff7e1b6744bebb8210cc2322 = L.popup({"maxWidth": 300});
+
+        
+            var html_d7576ac3c7ae3c9867822851138212c8 = $(`<div id="html_d7576ac3c7ae3c9867822851138212c8" style="width: 100.0%; height: 100.0%;">면적(wide): 86㎡<br>건축년도(year): 2024<br>병원 거리: 476m<br>학교 거리: 318m<br>회사 거리: 2669m<br>예측 거래금액: 82만원</div>`)[0];
+            popup_df6e4822ff7e1b6744bebb8210cc2322.setContent(html_d7576ac3c7ae3c9867822851138212c8);
+        
+
+        circle_marker_61819faf43e9e17c29d974cfbc937d5d.bindPopup(popup_df6e4822ff7e1b6744bebb8210cc2322)
+        ;
+
+        
+    
+    
+            var circle_marker_92c952cea8947ecd8af1ec8269ec3f31 = L.circleMarker(
+                [36.828744, 128.6213017],
+                {"bubblingMouseEvents": true, "color": "#ffffcc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffcc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_936a02366c33ca6e874897fea1640d7f = L.popup({"maxWidth": 300});
+
+        
+            var html_03d13c4226a96f184a9102ffd9618658 = $(`<div id="html_03d13c4226a96f184a9102ffd9618658" style="width: 100.0%; height: 100.0%;">면적(wide): 15㎡<br>건축년도(year): 2023<br>병원 거리: 370m<br>학교 거리: 171m<br>회사 거리: 2923m<br>예측 거래금액: 34만원</div>`)[0];
+            popup_936a02366c33ca6e874897fea1640d7f.setContent(html_03d13c4226a96f184a9102ffd9618658);
+        
+
+        circle_marker_92c952cea8947ecd8af1ec8269ec3f31.bindPopup(popup_936a02366c33ca6e874897fea1640d7f)
+        ;
+
+        
+    
+    
+            var circle_marker_5c215c0b2572dce4f9187d0a73a8e170 = L.circleMarker(
+                [36.8276682, 128.6212965],
+                {"bubblingMouseEvents": true, "color": "#fff7b9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff7b9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_2ab60594d831589ec64590aaeb2c98b2 = L.popup({"maxWidth": 300});
+
+        
+            var html_aa239bdc9653f03dbea55187a838c905 = $(`<div id="html_aa239bdc9653f03dbea55187a838c905" style="width: 100.0%; height: 100.0%;">면적(wide): 24㎡<br>건축년도(year): 2024<br>병원 거리: 876m<br>학교 거리: 257m<br>회사 거리: 2349m<br>예측 거래금액: 38만원</div>`)[0];
+            popup_2ab60594d831589ec64590aaeb2c98b2.setContent(html_aa239bdc9653f03dbea55187a838c905);
+        
+
+        circle_marker_5c215c0b2572dce4f9187d0a73a8e170.bindPopup(popup_2ab60594d831589ec64590aaeb2c98b2)
+        ;
+
+        
+    
+    
+            var circle_marker_f41b8714ffa29f54938aaf337c4c9401 = L.circleMarker(
+                [36.827513, 128.6212876],
+                {"bubblingMouseEvents": true, "color": "#fff5b3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff5b3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_e4832d37714665a435c648fc3515bfab = L.popup({"maxWidth": 300});
+
+        
+            var html_eaee30e23e7750e335bc131badb7fe2d = $(`<div id="html_eaee30e23e7750e335bc131badb7fe2d" style="width: 100.0%; height: 100.0%;">면적(wide): 26㎡<br>건축년도(year): 2024<br>병원 거리: 351m<br>학교 거리: 351m<br>회사 거리: 2704m<br>예측 거래금액: 39만원</div>`)[0];
+            popup_e4832d37714665a435c648fc3515bfab.setContent(html_eaee30e23e7750e335bc131badb7fe2d);
+        
+
+        circle_marker_f41b8714ffa29f54938aaf337c4c9401.bindPopup(popup_e4832d37714665a435c648fc3515bfab)
+        ;
+
+        
+    
+    
+            var circle_marker_65fe60db77adb7e6e41e1731ced8a0e3 = L.circleMarker(
+                [36.8278492, 128.6204621],
+                {"bubblingMouseEvents": true, "color": "#fd913e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd913e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_3d7da1a9a308a07336b42be4a88efc1c = L.popup({"maxWidth": 300});
+
+        
+            var html_d279172cd0f0fe7546cb2d11cc435926 = $(`<div id="html_d279172cd0f0fe7546cb2d11cc435926" style="width: 100.0%; height: 100.0%;">면적(wide): 64㎡<br>건축년도(year): 2022<br>병원 거리: 1058m<br>학교 거리: 47m<br>회사 거리: 2559m<br>예측 거래금액: 68만원</div>`)[0];
+            popup_3d7da1a9a308a07336b42be4a88efc1c.setContent(html_d279172cd0f0fe7546cb2d11cc435926);
+        
+
+        circle_marker_65fe60db77adb7e6e41e1731ced8a0e3.bindPopup(popup_3d7da1a9a308a07336b42be4a88efc1c)
+        ;
+
+        
+    
+    
+            var circle_marker_a8debd53ef5690825eefdf4bd8c67cc7 = L.circleMarker(
+                [36.8216879, 128.6209777],
+                {"bubblingMouseEvents": true, "color": "#fff5b3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff5b3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_e79299443e986a543031fe9e5ab2ba4f = L.popup({"maxWidth": 300});
+
+        
+            var html_209ebac86607b18fab3199a67ca20cbf = $(`<div id="html_209ebac86607b18fab3199a67ca20cbf" style="width: 100.0%; height: 100.0%;">면적(wide): 16㎡<br>건축년도(year): 2024<br>병원 거리: 755m<br>학교 거리: 169m<br>회사 거리: 2415m<br>예측 거래금액: 39만원</div>`)[0];
+            popup_e79299443e986a543031fe9e5ab2ba4f.setContent(html_209ebac86607b18fab3199a67ca20cbf);
+        
+
+        circle_marker_a8debd53ef5690825eefdf4bd8c67cc7.bindPopup(popup_e79299443e986a543031fe9e5ab2ba4f)
+        ;
+
+        
+    
+    
+            var circle_marker_594be1c3614112d2a8094dba57fa0bf0 = L.circleMarker(
+                [36.8264237, 128.6253764],
+                {"bubblingMouseEvents": true, "color": "#fffdc8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffdc8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_e1bfd7ee6272bb93434cd4a5cfd70c9c = L.popup({"maxWidth": 300});
+
+        
+            var html_0f259a7795d5407ee83fe8d40547a0de = $(`<div id="html_0f259a7795d5407ee83fe8d40547a0de" style="width: 100.0%; height: 100.0%;">면적(wide): 18㎡<br>건축년도(year): 2024<br>병원 거리: 233m<br>학교 거리: 309m<br>회사 거리: 2898m<br>예측 거래금액: 35만원</div>`)[0];
+            popup_e1bfd7ee6272bb93434cd4a5cfd70c9c.setContent(html_0f259a7795d5407ee83fe8d40547a0de);
+        
+
+        circle_marker_594be1c3614112d2a8094dba57fa0bf0.bindPopup(popup_e1bfd7ee6272bb93434cd4a5cfd70c9c)
+        ;
+
+        
+    
+    
+            var circle_marker_fc45b37195b235cb4466b864890eb556 = L.circleMarker(
+                [36.8271212, 128.6209818],
+                {"bubblingMouseEvents": true, "color": "#fff3af", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff3af", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_a9c988cc769d59311c4ac75fef999d1c = L.popup({"maxWidth": 300});
+
+        
+            var html_9cc4723d602636a346712fc9675d5dc0 = $(`<div id="html_9cc4723d602636a346712fc9675d5dc0" style="width: 100.0%; height: 100.0%;">면적(wide): 17㎡<br>건축년도(year): 2022<br>병원 거리: 722m<br>학교 거리: 224m<br>회사 거리: 2711m<br>예측 거래금액: 40만원</div>`)[0];
+            popup_a9c988cc769d59311c4ac75fef999d1c.setContent(html_9cc4723d602636a346712fc9675d5dc0);
+        
+
+        circle_marker_fc45b37195b235cb4466b864890eb556.bindPopup(popup_a9c988cc769d59311c4ac75fef999d1c)
+        ;
+
+        
+    
+    
+            var circle_marker_1cb66fcff3888e1c3186bb99b11226ea = L.circleMarker(
+                [36.8265688, 128.6220019],
+                {"bubblingMouseEvents": true, "color": "#fff5b3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff5b3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_4731d39145bf494705aff63b11543967 = L.popup({"maxWidth": 300});
+
+        
+            var html_75958fa4f7f9a31ecd4f9243482d1618 = $(`<div id="html_75958fa4f7f9a31ecd4f9243482d1618" style="width: 100.0%; height: 100.0%;">면적(wide): 16㎡<br>건축년도(year): 2024<br>병원 거리: 204m<br>학교 거리: 423m<br>회사 거리: 2767m<br>예측 거래금액: 39만원</div>`)[0];
+            popup_4731d39145bf494705aff63b11543967.setContent(html_75958fa4f7f9a31ecd4f9243482d1618);
+        
+
+        circle_marker_1cb66fcff3888e1c3186bb99b11226ea.bindPopup(popup_4731d39145bf494705aff63b11543967)
+        ;
+
+        
+    
+    
+            var circle_marker_4fbbaf7d9c5c96a34ea855c715359b20 = L.circleMarker(
+                [36.8265644, 128.6213298],
+                {"bubblingMouseEvents": true, "color": "#fd9640", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd9640", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_2689a53923d781c8a8e50a6108d2f2ec = L.popup({"maxWidth": 300});
+
+        
+            var html_52d773df29b5fa3ef9dc6667c9f02eb4 = $(`<div id="html_52d773df29b5fa3ef9dc6667c9f02eb4" style="width: 100.0%; height: 100.0%;">면적(wide): 61㎡<br>건축년도(year): 2022<br>병원 거리: 216m<br>학교 거리: 700m<br>회사 거리: 2521m<br>예측 거래금액: 67만원</div>`)[0];
+            popup_2689a53923d781c8a8e50a6108d2f2ec.setContent(html_52d773df29b5fa3ef9dc6667c9f02eb4);
+        
+
+        circle_marker_4fbbaf7d9c5c96a34ea855c715359b20.bindPopup(popup_2689a53923d781c8a8e50a6108d2f2ec)
+        ;
+
+        
+    
+    
+            var circle_marker_4bc25424c739fe84998bc850cfa1767f = L.circleMarker(
+                [36.8286023, 128.6210144],
+                {"bubblingMouseEvents": true, "color": "#fff3af", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff3af", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_3adc642c8215f6b18f0a380689ad0c98 = L.popup({"maxWidth": 300});
+
+        
+            var html_d5d74d99e4a1874ba278f96c13d9affb = $(`<div id="html_d5d74d99e4a1874ba278f96c13d9affb" style="width: 100.0%; height: 100.0%;">면적(wide): 15㎡<br>건축년도(year): 2023<br>병원 거리: 1000m<br>학교 거리: 217m<br>회사 거리: 2103m<br>예측 거래금액: 40만원</div>`)[0];
+            popup_3adc642c8215f6b18f0a380689ad0c98.setContent(html_d5d74d99e4a1874ba278f96c13d9affb);
+        
+
+        circle_marker_4bc25424c739fe84998bc850cfa1767f.bindPopup(popup_3adc642c8215f6b18f0a380689ad0c98)
+        ;
+
+        
+    
+    
+            var circle_marker_0cbf7c32f0041ef04dcf63de11ffa9ee = L.circleMarker(
+                [36.8249579, 128.6204658],
+                {"bubblingMouseEvents": true, "color": "#fed774", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed774", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_ab82cb6a5d683643ef5da8976af021a9 = L.popup({"maxWidth": 300});
+
+        
+            var html_871cf18c16b718f274bdbaf856a32d9b = $(`<div id="html_871cf18c16b718f274bdbaf856a32d9b" style="width: 100.0%; height: 100.0%;">면적(wide): 39㎡<br>건축년도(year): 2022<br>병원 거리: 939m<br>학교 거리: 99m<br>회사 거리: 2017m<br>예측 거래금액: 52만원</div>`)[0];
+            popup_ab82cb6a5d683643ef5da8976af021a9.setContent(html_871cf18c16b718f274bdbaf856a32d9b);
+        
+
+        circle_marker_0cbf7c32f0041ef04dcf63de11ffa9ee.bindPopup(popup_ab82cb6a5d683643ef5da8976af021a9)
+        ;
+
+        
+    
+    
+            var circle_marker_4b11f385746058e2c17ddd268273de83 = L.circleMarker(
+                [36.829366, 128.6181534],
+                {"bubblingMouseEvents": true, "color": "#feca66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feca66", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_246975cabf828a6995f5db3d7dfc7fd1 = L.popup({"maxWidth": 300});
+
+        
+            var html_de4d4871402f7b59637d0f385b319cde = $(`<div id="html_de4d4871402f7b59637d0f385b319cde" style="width: 100.0%; height: 100.0%;">면적(wide): 46㎡<br>건축년도(year): 2022<br>병원 거리: 936m<br>학교 거리: 251m<br>회사 거리: 2721m<br>예측 거래금액: 55만원</div>`)[0];
+            popup_246975cabf828a6995f5db3d7dfc7fd1.setContent(html_de4d4871402f7b59637d0f385b319cde);
+        
+
+        circle_marker_4b11f385746058e2c17ddd268273de83.bindPopup(popup_246975cabf828a6995f5db3d7dfc7fd1)
+        ;
+
+        
+    
+    
+            var circle_marker_fff9997f96de4e74b2f8d0135bbb668a = L.circleMarker(
+                [36.8290452, 128.6168917],
+                {"bubblingMouseEvents": true, "color": "#fff1a9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff1a9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_1dec164a9d36a1963c1eb809e2b16a83 = L.popup({"maxWidth": 300});
+
+        
+            var html_418dc8a2b33f8a40ad99f2ea6ca33326 = $(`<div id="html_418dc8a2b33f8a40ad99f2ea6ca33326" style="width: 100.0%; height: 100.0%;">면적(wide): 21㎡<br>건축년도(year): 2022<br>병원 거리: 674m<br>학교 거리: 243m<br>회사 거리: 2446m<br>예측 거래금액: 41만원</div>`)[0];
+            popup_1dec164a9d36a1963c1eb809e2b16a83.setContent(html_418dc8a2b33f8a40ad99f2ea6ca33326);
+        
+
+        circle_marker_fff9997f96de4e74b2f8d0135bbb668a.bindPopup(popup_1dec164a9d36a1963c1eb809e2b16a83)
+        ;
+
+        
+    
+    
+            var circle_marker_b89124e3532b68da4db3c3e54d149926 = L.circleMarker(
+                [36.8224399, 128.6193885],
+                {"bubblingMouseEvents": true, "color": "#fff5b3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff5b3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_7b733e6a12b6b3e96376050c4c94ed77 = L.popup({"maxWidth": 300});
+
+        
+            var html_1ad817029f323347969f0fe513c185d4 = $(`<div id="html_1ad817029f323347969f0fe513c185d4" style="width: 100.0%; height: 100.0%;">면적(wide): 23㎡<br>건축년도(year): 2023<br>병원 거리: 520m<br>학교 거리: 566m<br>회사 거리: 2385m<br>예측 거래금액: 39만원</div>`)[0];
+            popup_7b733e6a12b6b3e96376050c4c94ed77.setContent(html_1ad817029f323347969f0fe513c185d4);
+        
+
+        circle_marker_b89124e3532b68da4db3c3e54d149926.bindPopup(popup_7b733e6a12b6b3e96376050c4c94ed77)
+        ;
+
+        
+    
+    
+            var circle_marker_867560d923981339f8ab96626543c51d = L.circleMarker(
+                [36.8297264, 128.6208858],
+                {"bubblingMouseEvents": true, "color": "#fff3af", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff3af", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_8b9227d74031fb3b115bd210c804eeb6 = L.popup({"maxWidth": 300});
+
+        
+            var html_dd7bcc31f5f9a0e3211c4ece581e7733 = $(`<div id="html_dd7bcc31f5f9a0e3211c4ece581e7733" style="width: 100.0%; height: 100.0%;">면적(wide): 17㎡<br>건축년도(year): 2024<br>병원 거리: 410m<br>학교 거리: 649m<br>회사 거리: 2494m<br>예측 거래금액: 40만원</div>`)[0];
+            popup_8b9227d74031fb3b115bd210c804eeb6.setContent(html_dd7bcc31f5f9a0e3211c4ece581e7733);
+        
+
+        circle_marker_867560d923981339f8ab96626543c51d.bindPopup(popup_8b9227d74031fb3b115bd210c804eeb6)
+        ;
+
+        
+    
+    
+            var circle_marker_b5ad65b9c6b262c3a08fb05b8bc4c5a7 = L.circleMarker(
+                [36.829134, 128.6209254],
+                {"bubblingMouseEvents": true, "color": "#ffe895", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe895", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_04c9a312d5a7b43f0a90c8ce5033125b = L.popup({"maxWidth": 300});
+
+        
+            var html_25dee20b3a6dae749c6fca6a0b9a3ec2 = $(`<div id="html_25dee20b3a6dae749c6fca6a0b9a3ec2" style="width: 100.0%; height: 100.0%;">면적(wide): 29㎡<br>건축년도(year): 2023<br>병원 거리: 491m<br>학교 거리: 790m<br>회사 거리: 2491m<br>예측 거래금액: 45만원</div>`)[0];
+            popup_04c9a312d5a7b43f0a90c8ce5033125b.setContent(html_25dee20b3a6dae749c6fca6a0b9a3ec2);
+        
+
+        circle_marker_b5ad65b9c6b262c3a08fb05b8bc4c5a7.bindPopup(popup_04c9a312d5a7b43f0a90c8ce5033125b)
+        ;
+
+        
+    
+    
+            var circle_marker_cabc65101a83ccc02064889eaed0e0f0 = L.circleMarker(
+                [36.8228974, 128.618529],
+                {"bubblingMouseEvents": true, "color": "#fff5b3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff5b3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_33c652b3882b368e1a3278e8454b3dcb = L.popup({"maxWidth": 300});
+
+        
+            var html_c6f1791ce2997a9948fb319cdaf33d92 = $(`<div id="html_c6f1791ce2997a9948fb319cdaf33d92" style="width: 100.0%; height: 100.0%;">면적(wide): 16㎡<br>건축년도(year): 2024<br>병원 거리: 549m<br>학교 거리: 102m<br>회사 거리: 2873m<br>예측 거래금액: 39만원</div>`)[0];
+            popup_33c652b3882b368e1a3278e8454b3dcb.setContent(html_c6f1791ce2997a9948fb319cdaf33d92);
+        
+
+        circle_marker_cabc65101a83ccc02064889eaed0e0f0.bindPopup(popup_33c652b3882b368e1a3278e8454b3dcb)
+        ;
+
+        
+    
+    
+            var circle_marker_6507625f79c07adbc8816c9951ba60e5 = L.circleMarker(
+                [36.8292822, 128.6229688],
+                {"bubblingMouseEvents": true, "color": "#fff1a9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff1a9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_708c509dcb5723fc90e768b27abd8124 = L.popup({"maxWidth": 300});
+
+        
+            var html_6d0df9d4c94f40eaeab43d8645263243 = $(`<div id="html_6d0df9d4c94f40eaeab43d8645263243" style="width: 100.0%; height: 100.0%;">면적(wide): 20㎡<br>건축년도(year): 2022<br>병원 거리: 996m<br>학교 거리: 198m<br>회사 거리: 2970m<br>예측 거래금액: 41만원</div>`)[0];
+            popup_708c509dcb5723fc90e768b27abd8124.setContent(html_6d0df9d4c94f40eaeab43d8645263243);
+        
+
+        circle_marker_6507625f79c07adbc8816c9951ba60e5.bindPopup(popup_708c509dcb5723fc90e768b27abd8124)
+        ;
+
+        
+    
+    
+            var circle_marker_d2a93ed0edf79145b6c3bf5acb0dcc4c = L.circleMarker(
+                [36.8297787, 128.6224214],
+                {"bubblingMouseEvents": true, "color": "#fff9be", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff9be", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_2db59cdfb01466aea90e8b48ee9e513c = L.popup({"maxWidth": 300});
+
+        
+            var html_38842b0ad22c107abadc7051d224c022 = $(`<div id="html_38842b0ad22c107abadc7051d224c022" style="width: 100.0%; height: 100.0%;">면적(wide): 16㎡<br>건축년도(year): 2024<br>병원 거리: 1070m<br>학교 거리: 165m<br>회사 거리: 2722m<br>예측 거래금액: 37만원</div>`)[0];
+            popup_2db59cdfb01466aea90e8b48ee9e513c.setContent(html_38842b0ad22c107abadc7051d224c022);
+        
+
+        circle_marker_d2a93ed0edf79145b6c3bf5acb0dcc4c.bindPopup(popup_2db59cdfb01466aea90e8b48ee9e513c)
+        ;
+
+        
+    
+    
+            var circle_marker_d00fd89616a272e048c592dbf585d39b = L.circleMarker(
+                [36.8272487, 128.6257073],
+                {"bubblingMouseEvents": true, "color": "#f03523", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f03523", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_85c6428fb38b28b8d12ad91c14f992e2 = L.popup({"maxWidth": 300});
+
+        
+            var html_7ab58dacb18f6c00fb206136040a1d7f = $(`<div id="html_7ab58dacb18f6c00fb206136040a1d7f" style="width: 100.0%; height: 100.0%;">면적(wide): 87㎡<br>건축년도(year): 2024<br>병원 거리: 308m<br>학교 거리: 531m<br>회사 거리: 2617m<br>예측 거래금액: 82만원</div>`)[0];
+            popup_85c6428fb38b28b8d12ad91c14f992e2.setContent(html_7ab58dacb18f6c00fb206136040a1d7f);
+        
+
+        circle_marker_d00fd89616a272e048c592dbf585d39b.bindPopup(popup_85c6428fb38b28b8d12ad91c14f992e2)
+        ;
+
+        
+    
+    
+            var circle_marker_5bcbfc72d9ee1aa2d1a8b1906771f023 = L.circleMarker(
+                [36.8298616, 128.6234533],
+                {"bubblingMouseEvents": true, "color": "#fd9e43", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd9e43", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_e01a400c09a055ef2e8619176a655362 = L.popup({"maxWidth": 300});
+
+        
+            var html_0302efbd1bfd1ebc89e239caca516ea7 = $(`<div id="html_0302efbd1bfd1ebc89e239caca516ea7" style="width: 100.0%; height: 100.0%;">면적(wide): 59㎡<br>건축년도(year): 2024<br>병원 거리: 587m<br>학교 거리: 358m<br>회사 거리: 2449m<br>예측 거래금액: 65만원</div>`)[0];
+            popup_e01a400c09a055ef2e8619176a655362.setContent(html_0302efbd1bfd1ebc89e239caca516ea7);
+        
+
+        circle_marker_5bcbfc72d9ee1aa2d1a8b1906771f023.bindPopup(popup_e01a400c09a055ef2e8619176a655362)
+        ;
+
+        
+    
+    
+            var circle_marker_1cb04fc982309d9e28c17a01b9eabbe1 = L.circleMarker(
+                [36.8311163, 128.6199319],
+                {"bubblingMouseEvents": true, "color": "#800026", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800026", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_0940dd51b4e1303d13140b306b96160a = L.popup({"maxWidth": 300});
+
+        
+            var html_ab7a6aaef868705025569b7d1b3cf97a = $(`<div id="html_ab7a6aaef868705025569b7d1b3cf97a" style="width: 100.0%; height: 100.0%;">면적(wide): 97㎡<br>건축년도(year): 2024<br>병원 거리: 868m<br>학교 거리: 320m<br>회사 거리: 2219m<br>예측 거래금액: 104만원</div>`)[0];
+            popup_0940dd51b4e1303d13140b306b96160a.setContent(html_ab7a6aaef868705025569b7d1b3cf97a);
+        
+
+        circle_marker_1cb04fc982309d9e28c17a01b9eabbe1.bindPopup(popup_0940dd51b4e1303d13140b306b96160a)
+        ;
+
+        
+    
+    
+            var circle_marker_75943afd061987186265251ebe600a7c = L.circleMarker(
+                [36.8305363, 128.6198858],
+                {"bubblingMouseEvents": true, "color": "#fed774", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed774", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_c58a3dd14f82f07215f342d00f208975 = L.popup({"maxWidth": 300});
+
+        
+            var html_a07ce68cd22f043078e9f81c1c122f01 = $(`<div id="html_a07ce68cd22f043078e9f81c1c122f01" style="width: 100.0%; height: 100.0%;">면적(wide): 40㎡<br>건축년도(year): 2024<br>병원 거리: 245m<br>학교 거리: 367m<br>회사 거리: 2779m<br>예측 거래금액: 52만원</div>`)[0];
+            popup_c58a3dd14f82f07215f342d00f208975.setContent(html_a07ce68cd22f043078e9f81c1c122f01);
+        
+
+        circle_marker_75943afd061987186265251ebe600a7c.bindPopup(popup_c58a3dd14f82f07215f342d00f208975)
+        ;
+
+        
+    
+    
+            var circle_marker_fe338acd80ae07b00a17c910f7a160ff = L.circleMarker(
+                [36.829007, 128.6212732],
+                {"bubblingMouseEvents": true, "color": "#ffea9b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffea9b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_314147d03a2623d33dca26d33a0cad67 = L.popup({"maxWidth": 300});
+
+        
+            var html_b366ae128edc4bb22c350086ef4c158b = $(`<div id="html_b366ae128edc4bb22c350086ef4c158b" style="width: 100.0%; height: 100.0%;">면적(wide): 31㎡<br>건축년도(year): 2022<br>병원 거리: 280m<br>학교 거리: 630m<br>회사 거리: 2526m<br>예측 거래금액: 44만원</div>`)[0];
+            popup_314147d03a2623d33dca26d33a0cad67.setContent(html_b366ae128edc4bb22c350086ef4c158b);
+        
+
+        circle_marker_fe338acd80ae07b00a17c910f7a160ff.bindPopup(popup_314147d03a2623d33dca26d33a0cad67)
+        ;
+
+        
+    
+    
+            var circle_marker_a5f90f23ad199a633236917ce099527d = L.circleMarker(
+                [36.8277591, 128.6216813],
+                {"bubblingMouseEvents": true, "color": "#fed36f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed36f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_c690bfb317e283d9aba27905d7685c00 = L.popup({"maxWidth": 300});
+
+        
+            var html_2f8347e4d83d1ac9ae802dbe03c406b0 = $(`<div id="html_2f8347e4d83d1ac9ae802dbe03c406b0" style="width: 100.0%; height: 100.0%;">면적(wide): 43㎡<br>건축년도(year): 2022<br>병원 거리: 312m<br>학교 거리: 232m<br>회사 거리: 2897m<br>예측 거래금액: 53만원</div>`)[0];
+            popup_c690bfb317e283d9aba27905d7685c00.setContent(html_2f8347e4d83d1ac9ae802dbe03c406b0);
+        
+
+        circle_marker_a5f90f23ad199a633236917ce099527d.bindPopup(popup_c690bfb317e283d9aba27905d7685c00)
+        ;
+
+        
+    
+    
+            var circle_marker_7be8b15aa2c7fe3da43d57704c08a1f1 = L.circleMarker(
+                [36.8264237, 128.6253764],
+                {"bubblingMouseEvents": true, "color": "#fff5b3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff5b3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_fa9650844d09bddf50a07f6268074d8f = L.popup({"maxWidth": 300});
+
+        
+            var html_d2f9cf9fb0c0aa63b42307b7e01ab2c8 = $(`<div id="html_d2f9cf9fb0c0aa63b42307b7e01ab2c8" style="width: 100.0%; height: 100.0%;">면적(wide): 18㎡<br>건축년도(year): 2022<br>병원 거리: 417m<br>학교 거리: 154m<br>회사 거리: 2867m<br>예측 거래금액: 39만원</div>`)[0];
+            popup_fa9650844d09bddf50a07f6268074d8f.setContent(html_d2f9cf9fb0c0aa63b42307b7e01ab2c8);
+        
+
+        circle_marker_7be8b15aa2c7fe3da43d57704c08a1f1.bindPopup(popup_fa9650844d09bddf50a07f6268074d8f)
+        ;
+
+        
+    
+    
+            var circle_marker_f09ef2ddcc00d0a8ab48eb318f963260 = L.circleMarker(
+                [36.827607, 128.622065],
+                {"bubblingMouseEvents": true, "color": "#fd9e43", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd9e43", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_be5fb2ecc44421e42df333768fcb6c39);
+        
+    
+        var popup_a344f800451237d1ccda8ada61542ad4 = L.popup({"maxWidth": 300});
+
+        
+            var html_e9c71e914ac36b32ba925c015982ed66 = $(`<div id="html_e9c71e914ac36b32ba925c015982ed66" style="width: 100.0%; height: 100.0%;">면적(wide): 64㎡<br>건축년도(year): 2022<br>병원 거리: 757m<br>학교 거리: 139m<br>회사 거리: 2563m<br>예측 거래금액: 65만원</div>`)[0];
+            popup_a344f800451237d1ccda8ada61542ad4.setContent(html_e9c71e914ac36b32ba925c015982ed66);
+        
+
+        circle_marker_f09ef2ddcc00d0a8ab48eb318f963260.bindPopup(popup_a344f800451237d1ccda8ada61542ad4)
+        ;
+
+        
+    
+</script>
+</html>
